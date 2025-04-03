@@ -21,17 +21,13 @@
       <button id="delete" onclick="del()">Delete</button>
   </div>
   <script>
-      // add JavaScript here
-  </script>
-</body>
-
-</html>
-
-<script>
   async function list() {
     const endpoint = '/data-api/rest/nasdaq_1day';
     const response = await fetch(endpoint);
     const data = await response.json();
     console.table(data.value);
-}
-</script>
+  }
+  </script>
+</body>
+
+</html>
