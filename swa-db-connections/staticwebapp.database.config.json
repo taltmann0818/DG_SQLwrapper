@@ -20,7 +20,7 @@
       "host": {
         "mode": "production",
         "cors": {
-          "origins": ["http://localhost:4280"],
+          "origins": ["http://localhost:4280","https://kind-smoke-0bcfcdb0f.6.azurestaticapps.net/"],
           "allow-credentials": false
         },
         "authentication": {
@@ -29,8 +29,8 @@
       }
     },
     "entities": {
-      "Person": {
-        "source": "dbo.MyTestPersonTable",
+      "Nasdaq": {
+        "source": "dbo.nasdaq_1day",
         "permissions": [
           {
             "actions": ["*"],
