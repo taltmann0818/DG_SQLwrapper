@@ -40,7 +40,7 @@ module.exports = async function (context, req) {
       let insertCount = 0;
       for (const record of records) {
         await request.query(`
-          INSERT INTO dbo.nasdaq_1day (Date, Open, High, Low, Close, Volume, Ticker)
+          INSERT INTO nasdaq_1day (Date, Open, High, Low, Close, Volume, Ticker)
           VALUES ('${record.Date}', ${record.Open}, ${record.High}, 
                  ${record.Low}, ${record.Close}, ${record.Volume}, '${record.Ticker}')
         `);
