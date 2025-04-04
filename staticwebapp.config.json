@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "route": "/batch-insert",
+      "methods": [
+        "put",
+        "delete",
+        "post",
+        "get",
+        "connect",
+        "options",
+        "head",
+        "trace",
+        "patch"
+      ]
+    }
+  ]
+}
